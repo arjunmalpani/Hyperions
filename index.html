@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperion</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind style sheet -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- fixed top-0 py-8 mx-auto w-full max-w-[1500px] font-light -->
+    <header
+      class="fixed top-0 select-none mix-blend-difference left-0 right-0 py-8 px-4 max-w-[1500px] mx-auto font-light"
+    >
+      <div class="header w-full transition-all duration-500 || flex">
+        <div
+          class="transition duration-500 ease-in-out cursor-pointer flex items-center gap-1 px-4 py-1 rounded-full border border-[#ffffff52] hover:shadow-[0_0_5px_#ffffff50,0_0_20px_#ffffff50,0_0_50px_#ffffff50,0_0_100px_#ffffff50] hover:bg-white hover:text-[#161618] group"
+        >
+          <div class="w-9">
+            <img
+              class="h-full invert group-hover:invert-0"
+              src="./image.svg"
+              alt="hyperion logo"
+            />
+          </div>
+          <span class="text-xl font-normal">Hyperion</span>
+        </div>
+        <div
+          class="flex px-4 rounded-full justify-between items-center w-full border border-[#ffffff41]"
+        >
+          <nav>
+            <ul class="flex gap-5">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Socities</a></li>
+              <li><a href="#">Core Team</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+          <a href="/login" class="login">Log in</a>
+        </div>
+        <a
+          href="#"
+          class="px-4 py-2 rounded-full font-medium text-black bg-white border border-[#ffffff52] transition duration-500 ease-in-out cursor-pointer focus:outline-none hover:shadow-[0_0_5px_#ffffff50,0_0_20px_#ffffff50,0_0_50px_#ffffff50,0_0_100px_#ffffff50] hover:text-shadow-[0_0_5px_white,0_0_10px_white,0_0_20px_white]"
+          >Register</a
+        >
+      </div>
+    </header>
+    <section aria-label="Home Page" class="bg-[#161618]">
+      <div
+        class="container px-4 sm:px-10 pt-20 max-w-[1250px] mx-auto min-h-screen flex justify-center items-center"
+      >
+        <div>
+          <h1
+            class="heading font-[900] leading-none"
+            style="font-size: 10vw; opacity: calc(1 - var(--progress) + 0.3)"
+            data-scroll
+            data-scroll-css-progress
+            data-scroll-enable-touch-speed
+            data-scroll-speed="-0.2"
+          >
+            <span class="text-wrapper">
+              <span class="letters" style="font-size: clamp(4rem, 10vw, 14rem)"
+                >HYPERION</span
+              >
+            </span>
+          </h1>
+
+          <p
+            class="text-center"
+            style="font-size: clamp(1rem, 2vw, 1.25rem)"
+            data-scroll
+            data-scroll-speed="-0.2"
+          >
+            The Cultural Society of
+            <span class="font-semibold">PGDAV</span> College
+          </p>
+        </div>
+      </div>
+    </section>
+    <section aria-label="About" class="bg-[#dddddd] overflow-hidden">
+      <div
+        class="container px-4 sm:px-10 py-16 sm:py-32 max-w-[1250px] mx-auto"
+        data-scroll
+        data-scroll-speed="-0.2"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0"
+        >
+          <div class="w-full lg:w-[41%]">
+            <h2
+              class="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-medium leading-tight sm:leading-[5rem] text-baseColor"
+            >
+              About <span class="font-thin">Us</span>
+            </h2>
+            <p
+              class="text-slate-600 mt-8 sm:mt-14 font-light text-base sm:text-lg"
+            >
+              Hyperion serves as the backbone of our college's cultural
+              ecosystem, organizing flagship events like Exploranza and Arohana.
+              Beyond these grand celebrations, Hyperion plays a pivotal role in
+              unearthing and nurturing student talent across diverse fields. The
+              committee takes charge of streamlining the activities of various
+              cultural societies, ensuring smooth operations and fostering a
+              vibrant campus environment. Moreover, it actively collaborates
+              with sponsors to host a plethora of engaging and interactive
+              events, amplifying the college's cultural vibrance.
+            </p>
+            <p
+              class="text-slate-600 mt-6 sm:mt-10 font-light text-base sm:text-lg"
+            >
+              In addition to organizing in-house events, Hyperion encourages and
+              supports the participation of its societies in inter-college
+              competitions, representing the institution on larger platforms. At
+              the start of every academic year, a committee comprising faculty
+              and elected student representatives is formed to oversee and
+              monitor the society's functioning. This democratic and
+              collaborative approach ensures the societies run efficiently while
+              fostering leadership and teamwork among students.
+            </p>
+          </div>
+          <div class="w-full lg:w-[41%] h-[400px] sm:h-[500px] lg:h-[600px]">
+            <div class="h-full w-full">
+              <img
+                src="/culturalDance.jpg"
+                alt="About image"
+                style="
+                  scale: min(calc(0.5 + var(--progress)), 1);
+                  opacity: calc(0.7 + var(--progress));
+                "
+                class="h-full w-full object-cover rounded-lg"
+                data-scroll
+                data-scroll-speed="-0.1"
+                data-scroll-css-progress
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-label="Team" id="team" class="bg-[#161618]">
+      <div
+        class="container px-4 sm:px-10 py-16 sm:py-24 lg:py-32 max-w-[1250px] mx-auto"
+      >
+        <div>
+          <h2
+            class="text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] capitalize font-bold text-center"
+          >
+            <span class="font-light">Meet The</span> TEAM
+          </h2>
+
+          <!-- Mentor -->
+          <div class="mb-8 sm:mb-16 lg:mb-20">
+            <h3
+              class="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] text-center mb-8 sm:mb-12 lg:mb-16 font-light tracking-wide"
+            >
+              Mentor
+            </h3>
+            <div
+              class="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 sm:gap-8 lg:gap-0 px-2 sm:px-6 lg:px-10"
+            >
+              <div
+                class="w-full sm:w-[45%] lg:w-[40%] flex justify-center sm:justify-end"
+              >
+                <div
+                  class="w-40 sm:w-48 lg:w-1/2 rounded-full aspect-square overflow-hidden transition-transform duration-500 hover:scale-105 shadow-lg hover:shadow-2xl"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    src="/faces/mentor.jpg"
+                    alt="Dr. Aparna Datt - Mentor"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-full sm:w-[50%] lg:w-[44%] text-center sm:text-left"
+              >
+                <div class="space-y-2 sm:space-y-3 lg:space-y-4">
+                  <h3
+                    class="text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                  >
+                    Dr. Aparna Datt
+                  </h3>
+                  <p
+                    class="text-lg sm:text-xl lg:text-2xl font-light tracking-wider text-gray-300"
+                  >
+                    Convenor
+                  </p>
+                  <p
+                    class="text-sm sm:text-base lg:text-lg font-light text-gray-400 max-w-lg mx-auto sm:mx-0"
+                  >
+                    Leading with vision and dedication, Dr. Aparna Datt guides
+                    Hyperion towards excellence in cultural innovation and
+                    student development.
+                  </p>
+                  <div
+                    class="flex justify-center sm:justify-start gap-3 sm:gap-4 pt-2"
+                  >
+                    <a
+                      href="#"
+                      class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full border border-gray-500 hover:border-white transition-colors duration-300"
+                    >
+                      View Profile
+                    </a>
+                    <a
+                      href="#"
+                      class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-300"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3
+            class="text-[2rem] sm:text-[2.25rem] lg:text-[2.5rem] font-bold text-center mb-8 sm:mb-10"
+          >
+            Core <span class="font-light">Team</span>
+          </h3>
+
+          <div class="mb-8 sm:mb-16 lg:mb-20">
+            <div
+              class="swiper grid grid-cols-1 md:grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-8 sm:gap-y-12 px-2 sm:px-6 lg:px-10"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-40 sm:w-48 lg:w-1/2 rounded-full aspect-square overflow-hidden transition-transform duration-500 hover:scale-105 shadow-lg hover:shadow-2xl"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        src="/faces/mentor.jpg"
+                        alt="Dr. Aparna Datt - Mentor"
+                      />
+                    </div>
+                    <div class="text-center mt-4 sm:mt-6">
+                      <div class="space-y-2 sm:space-y-3">
+                        <h3
+                          class="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                        >
+                          Dr. Aparna Datt
+                        </h3>
+                        <p
+                          class="text-lg sm:text-xl lg:text-2xl font-light tracking-wider text-gray-300"
+                        >
+                          Convenor
+                        </p>
+                        <div class="flex justify-center gap-3 sm:gap-4 pt-2">
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full border border-gray-500 hover:border-white transition-colors duration-300"
+                          >
+                            View Profile
+                          </a>
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-300"
+                          >
+                            Contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-40 sm:w-48 lg:w-1/2 rounded-full aspect-square overflow-hidden transition-transform duration-500 hover:scale-105 shadow-lg hover:shadow-2xl"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        src="/faces/vice_president.jpg"
+                        alt="Dr. John Doe - Mentor"
+                      />
+                    </div>
+                    <div class="text-center mt-4 sm:mt-6">
+                      <div class="space-y-2 sm:space-y-3">
+                        <h3
+                          class="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                        >
+                          Dr. John Doe
+                        </h3>
+                        <p
+                          class="text-lg sm:text-xl lg:text-2xl font-light tracking-wider text-gray-300"
+                        >
+                          Co-Convenor
+                        </p>
+                        <div class="flex justify-center gap-3 sm:gap-4 pt-2">
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full border border-gray-500 hover:border-white transition-colors duration-300"
+                          >
+                            View Profile
+                          </a>
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-300"
+                          >
+                            Contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-40 sm:w-48 lg:w-1/2 rounded-full aspect-square overflow-hidden transition-transform duration-500 hover:scale-105 shadow-lg hover:shadow-2xl"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        src="/faces/mentor.jpg"
+                        alt="Dr. John Doe - Mentor"
+                      />
+                    </div>
+                    <div class="text-center mt-4 sm:mt-6">
+                      <div class="space-y-2 sm:space-y-3">
+                        <h3
+                          class="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                        >
+                          Dr. John Doe
+                        </h3>
+                        <p
+                          class="text-lg sm:text-xl lg:text-2xl font-light tracking-wider text-gray-300"
+                        >
+                          Co-Convenor
+                        </p>
+                        <div class="flex justify-center gap-3 sm:gap-4 pt-2">
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full border border-gray-500 hover:border-white transition-colors duration-300"
+                          >
+                            View Profile
+                          </a>
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-300"
+                          >
+                            Contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-40 sm:w-48 lg:w-1/2 rounded-full aspect-square overflow-hidden transition-transform duration-500 hover:scale-105 shadow-lg hover:shadow-2xl"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        src="/faces/mentor.jpg"
+                        alt="Dr. John Doe - Mentor"
+                      />
+                    </div>
+                    <div class="text-center mt-4 sm:mt-6">
+                      <div class="space-y-2 sm:space-y-3">
+                        <h3
+                          class="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+                        >
+                          Dr. John Doe
+                        </h3>
+                        <p
+                          class="text-lg sm:text-xl lg:text-2xl font-light tracking-wider text-gray-300"
+                        >
+                          Co-Convenor
+                        </p>
+                        <div class="flex justify-center gap-3 sm:gap-4 pt-2">
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full border border-gray-500 hover:border-white transition-colors duration-300"
+                          >
+                            View Profile
+                          </a>
+                          <a
+                            href="#"
+                            class="text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-300"
+                          >
+                            Contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar bg-black"></div>
+            </div>
+          </div>
+          <!-- President / Vice President section commented out -->
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

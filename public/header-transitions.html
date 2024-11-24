@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .header {
+            transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+        }
+
+        .header.minimised {
+            height: 60px; /* Fixed height for minimised state */
+            overflow: hidden;
+        }
+
+        .header .text-wrapper {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .header.minimised .text-wrapper {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header fixed top-0 select-none mix-blend-difference left-0 right-0 py-8 px-4 max-w-[1500px] mx-auto font-light">
+        <!-- Your existing header content -->
+    </header>
+
+    <script>
+        const header = document.querySelector(".header");
+        let isMinimised = false;
+
+        document.addEventListener("scroll", () => {
+            const threshold = window.innerHeight;
+            const scrolled = window.scrollY;
+
+            if (scrolled > threshold && !isMinimised) {
+                header.classList.add("minimised");
+                isMinimised = true;
+            }
+
+            if (scrolled <= threshold && isMinimised) {
+                header.classList.remove("minimised");
+                isMinimised = false;
+            }
+        });
+    </script>
+</body>
+</html>

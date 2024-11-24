@@ -1,0 +1,20 @@
+{
+  "name": "hyperion",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "tailBuild": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^4.1.4",
+    "swiper": "^11.1.15"
+  }
+}
